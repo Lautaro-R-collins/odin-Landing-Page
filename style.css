@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,500&family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    
+:root {
+    --primary: #1c2531;
+    --secondary: #3b4f61;
+    --tertiary: #e6e8e9;
+    --trim-color: #03afe4; 
+}
+
+main {
+    margin-top: 48px;
+}
+
+/* Navbar*/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--tertiary);
+    padding: 5px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 125px;
+    
+}
+
+.menu { 
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 120px;
+
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: var(--tertiary);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.menu a:hover {
+    color: var(--trim-color);
+    font-weight: 600;
+    transition-delay: 0.2s;
+}
+
+/*headings and paragraphs*/
+
+h1 {
+    color: var(--tertiary);
+    font-size: 3em;
+    font-weight: 750;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+h3 {
+    color: var(--tertiary);
+    font-size: 1em;
+}
+
+h4 {
+    color: var(--tertiary);
+    font-size: 0.8em;
+}
+
+span {
+    color:var(--trim-color)
+}
+
+/* welcome page*/
+
+
+#home {
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.welcome {
+    margin: 0 auto;
+    width: 80vw;
+    height: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music {
+    width: 430px;
+    height: 430px;
+    margin-left: 100px;
+}
+
+.button {
+    position:relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: var(--trim-color);
+    background: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button:hover {
+    color: var(--secondary);
+    background: var(--trim-color);
+    border: none;
+    box-shadow: 0 0 10px var(--trim-color), 0 0 40px var(--trim-color);
+    transition-delay: 0.2s;
+}
+
+/*About section*/
+
+#about {
+    margin: 0 auto;
+    width: 80vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    padding-bottom: 40px;
+    height: 22vh;
+    width: 22vw;   
+}
+
+.container p {
+    text-align: center; 
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/*cite*/
+
+#cite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 230, 236);
+}
+
+.quote-container {
+    padding: 90px;
+}
+
+.quote {
+  max-width: 800px;
+  font-size: 2.3em;
+  font-weight: 600;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: right;
+}
+
+/*subscription section*/
+
+#subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background: var(--secondary);
+    border-radius: 15px;
+    margin: 60px;
+}
+
+.start h3 {
+    font-size: 1.1em;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 10px;
+}
